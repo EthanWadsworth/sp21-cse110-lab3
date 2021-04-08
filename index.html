@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang=”en”>
+    <head>
+        <title>Rantings of a Sleep-Deprived Student</title>
+        <meta name="author" content="Ethan Wadsworth">
+        <meta name="description" content="journal">
+        <link href="book.ico" rel="icon">
+    </head>
+    <body>
+        <header>
+            <h1>Journal</h1>
+            <hr>
+            <h2>Entries</h2>
+
+            <nav>
+                <ul>
+                    <li><a href="#Monday0405">Monday, April 5th, 2021</a></li>
+                    <li><a href="#Tuesday0406">Tuesday, April 6th, 2021</a></li>
+                    <li><a href="#Wednesday0407">Wednesday, April 7th, 2021</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+
+        <main>
+            <section class="entry">
+                <h1>Monday, April 5th, 2021</h1>
+                <a name="Monday0405"></a>
+
+
+            </section>
+
+            <section class="entry">
+                <a name="Tuesday0406"></a>
+            </section>
+
+            <section class="entry">
+                <a name="Wednesday0407"></a>
+            </section>
+        </main>
+
+        <footer>
+            <hr>
+            <form id="create-entry">
+                <label for="author">Author:</label><br>
+                <input type="text" id="author" name="author">
+
+                <label for="entry-date">Entry Date:</label>
+
+                <input type="date" id="entry-date" name="trip-start" value="2021-04-01" min="1920-01-01" max="2030-21-31">
+                <br>
+
+                <fieldset>
+                    <legend>Choose the format of journal entry your are creating: </legend>
+                    <input type="radio" id="educational" name="format">
+                    <label for="educational">Educational</label><br/>
+
+                    <input type="radio" id="personal" name="format">
+                    <label for="personal">Personal</label><br/>
+
+                    <input type="radio" id="professional" name="format">
+                    <label for="professional">Professional</label><br/>
+
+                    <input type="radio" id="funny" name="format">
+                    <label for="funny">Funny</label>
+                </fieldset>
+
+                <label for="difficulty">If educational or technical, choose a recommended experience level:</label>
+                <input list="difficulties" name="difficulty" id="difficulty">
+                <datalist id="difficulties">
+                    <option value="Any">
+                    <option value="Beginner">
+                    <option value="Novice">
+                    <option value="Experienced">
+                    <option value="Expert">
+                </datalist>
+                <br>
+
+                <label for="audience-select">Choose a recommended audience if you have one:</label>
+                <select name="audience" id="audience-select">
+                    <option value="none">None</option>
+                    <option value="children">Children</option>
+                    <option value="teenager">Teenager</option>
+                    <option value="college-student">College Student</option>
+                    <option value="adult">Adult</option>
+                    <option value="parent">Parent</option>
+                </select>
+
+                <h3>Write out the main content for your entry: </h3>
+                <textarea id="content" name="story" rows="6", cols="30"></textarea>
+                <br>
+
+                <input type="checkbox" id="confirm" name="confirm">
+                <label for="confirm">I have included everything I want to include in my entry</label>
+                <br>
+                
+                <button type="submit" form="create-entry">Create Entry</button>
+            </form>
+        </footer>
+    </body>
+</html>
