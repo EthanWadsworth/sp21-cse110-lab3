@@ -5,6 +5,9 @@
         <meta name="author" content="Ethan Wadsworth">
         <meta name="description" content="journal">
         <link href="book.ico" rel="icon">
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -29,14 +32,14 @@
                 <h3>Date: Monday, April 5th, 2021</h3>
 
                 <h3>Today's Agenda: </h3>
-                <ol>
+                <ol class="agenda">
                     <li>10:00 am - 11:00 am: CSE 135 Lecture</li>
                     <li>1:00 pm - 2:00 pm: PHIL 28 Lecture</li>
                     <li>6:00 pm - 9:00 pm: NCAA Tournament Championship </li>
                     <li>9:00 pm - 10:30 pm: CSE 101 homework group meeting</li>
                 </ol>
 
-                <p>
+                <p id="p-side">
                     It's the start of week 2, and it almost feels like I'm already swamped in work. While the 
                     work so far has not been too bad and I really enjoy my classes, I'm very apprehensive about
                     what will happen once they all start to ramp up at once. After attending my classes, and 
@@ -51,7 +54,7 @@
                     setting them up. Here's a picture. I finally have a somewhat complete setup, whoo!
                 </p>
 
-                <span><img src="speakers.jpeg" width="400" alt="current pc setup"></span>
+                <span><img src="speakers.jpeg" width="400" alt="current pc setup" id="speakers"></span>
             </section>
 
             <section class="entry">
@@ -61,7 +64,7 @@
                 <h3>Date: Tuesday, April 6th, 2021</h3>
 
                 <h3>Today's Agenda:</h3>
-                <ol>
+                <ol class="agenda">
                     <li>9:30 am - 11:00 am: CSE 101 Lecture</li>
                     <li>4:00 pm - 5:30 pm: CSE 110 Lecture</li>
                 </ol>
@@ -93,12 +96,14 @@
                     I ended up with a very janky-looking video. Here's how it came out:
                 </p>
 
-                <video controls width="450">    
-                    <source src="armor_side_by_side_cut.mp4"
-                            type="video/mp4">
-                
-                    Sorry, your browser doesn't support embedded videos.
-                </video>
+                <div class="video-container">
+                    <video controls>    
+                        <source src="armor_side_by_side_cut.mp4"
+                                type="video/mp4">
+                    
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </div>
 
                 <p>
                     Despite thinking that my day would end up not being that busy, I still
@@ -112,7 +117,7 @@
                 <h1>Lectures, Meetings, More Lectures, More Meetings</h1>
                 <h3>Wednesday, April 7th, 2021</h3>
                 <h3>Today's Agenda:</h3>
-                <ol>
+                <ol class="agenda">
                     <li>10:00 am - 11:00 am: CSE 135 Lecture</li>
                     <li>11:00 am - 12:00 pm: CSE 135 Discussion</li>
                     <li>12:00 pm  3:00 pm: CSE 110 Lab Work Time</li>
