@@ -10,16 +10,7 @@ body {
 }
 
 p {
-    font-size: 1.2em;
-}
-
-.entry {
-
-}
-
-header h1 {
-    color: white;
-    font-size: 4em;
+    font-size: 5mm;
 }
 
 ul > li {
@@ -45,12 +36,13 @@ ul > li {
     left: 10px;
     display: inline-block;
     max-width: 600px;
+    min-width: 300px;
 }
 
 #speakers {
     display: inline;
-    max-height: 400px;
-    width: auto;
+    max-width: 300px;
+    height: auto;
     position: relative;
     left: 20px;
 }
@@ -76,3 +68,77 @@ video {
 figure {
     text-align: center;
 }
+
+figcaption {
+    padding-bottom: 10px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+fieldset {
+    margin-top: 0.3cm;
+    margin-bottom: 0.7cm;
+}
+
+fieldset label {
+    margin-left: 5px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    padding-left: 10px;
+}
+
+nav a {
+    margin-right: 10px;
+}
+
+[for=entry-date] {
+    margin-top: 10px;
+    display: block;
+}
+
+[for=entry-date] ~ [type=date] {
+    display: block;
+}
+
+a.entry-link:hover {
+    color:hsl(50, 100%, 50%);
+}
+
+[name=format]:active {
+    color: hsl(50, 100%, 50%);
+}
+
+button:active {
+    background-color: hsl(50, 100%, 50%);
+}
+
+@media (max-width: 960px) {
+    #speakers {
+        display: block;
+        margin: auto;
+    }
+
+    #p-side {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+details li, details summary {
+    color: #a1a1a1;
+    font-size: 1.3vmax;
+}
+
